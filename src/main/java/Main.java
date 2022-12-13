@@ -14,13 +14,9 @@ public class Main {
         while (listIterator.hasPrevious()) {
             String i = listIterator.previous();
             System.out.print(i + " ");
-        }
-
-        while (listIterator.hasNext()) {
             listIterator.next();
             listIterator.remove();
         }
-
 
         System.out.println("\n" + symbols.isEmpty());
     }
